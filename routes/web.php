@@ -145,3 +145,7 @@ Route::view('others/search-result', 'others.search-result')->name('search-result
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

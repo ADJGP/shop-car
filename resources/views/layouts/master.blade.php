@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>Gull - Laravel + Bootstrap 4 admin template</title>
+        <title>Shopping Car</title>
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
         @yield('before-css')
         {{-- theme css --}}
@@ -214,7 +214,7 @@
 
 
         {{-- common js --}}
-        <script src="{{mix('assets/js/common-bundle-script.js')}}"></script>
+        <script src="{{asset('assets/js/common-bundle-script.js')}}"></script>
         {{-- page specific javascript --}}
         @yield('page-js')
 
