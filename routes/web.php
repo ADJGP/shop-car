@@ -147,6 +147,6 @@ Route::view('others/search-result', 'others.search-result')->name('search-result
 //Route::get('/home', 'HomeController@index')->name('home');
 
 */
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
