@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard.dashboardv1');
+    return view('auth.login');
 });
+/*
 // Route::view('/', 'starter')->name('starter');
 Route::get('large-compact-sidebar/dashboard/dashboard1', function () {
     // set layout sesion(key)
@@ -145,7 +146,7 @@ Route::view('others/search-result', 'others.search-result')->name('search-result
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
-
+*/
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
